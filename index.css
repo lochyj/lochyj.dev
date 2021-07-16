@@ -48,6 +48,16 @@
     display: flex;
 }
 
+.hover span:hover{
+    color: #31BA69;
+    animation: smoothFadeIn linear 0.2s;
+    cursor: default;
+}
+@keyframes smoothFadeIn {
+    0% {color: white;}
+    100% {color: #31BA69;}
+}
+
 .lochyjContainer span:hover{
     color: #31BA69;
     animation: fadeIn linear 0.2s;
@@ -99,6 +109,19 @@
 .link{
     margin-top: 30px;
     margin-left: 10vw;
+    text-decoration-color: #8CFBDE;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #31BA69;
+}
+
+.downArrow{
+    max-width: 50px;
+    display: flex;
+    margin-top: 25vh;
+    margin-left: 45vw;
 }
 
 /* CSS Effects */
