@@ -2,126 +2,428 @@
 
 /* ColorPallet: Primary: #1d1d1d; Secondary: #31BA69; Tertiary: #8CFBDE;*/
 
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    background-color: #1d1d1d;
-    cursor: default;
+@media only screen and (min-width: 1022px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        background-color: #1d1d1d;
+        cursor: default;
+    }
+    ::-webkit-scrollbar{
+        background-color: #1d1d1d;
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: #31BA69;
+    }
+
+    ::selection{
+        background-color: #8CFBDE;
+        color: #1d1d1d;
+    }
+
+
+    /* Navigation */
+    .navigationWrapper{
+        display: table;
+        margin-left: 65vw;
+        margin-top: 10px;
+    }
+
+    .navLi{
+        display: inline;
+    }
+
+    .navLink{
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-left: 4vw;
+    }
+
+    .navLink:hover{
+        text-decoration: underline;
+        text-decoration-color: #8CFBDE;
+    }
+
+
+    /* Title / Webpage Impression */
+    .title{
+        display: flex;
+        font-size: 5rem;
+        margin-left: 5vw;
+        margin-top: 17vh;
+        z-index:2;
+    }
+
+    .lochyjContainer{
+        display: flex;
+    }
+
+    .hover span:hover{
+        color: #31BA69;
+        animation: smoothFadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes smoothFadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
+
+    .lochyjContainer span:hover{
+        color: #31BA69;
+        animation: fadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes fadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
+
+
+    .pointTitle{
+        color: #31BA69;
+    }
+
+    .pointTitle:hover{
+        color: white;
+    }
+
+    .pointTitle:hover ~ .hoverChange{
+        text-decoration: underline;
+        text-decoration-color: #31BA69;
+        animation: fadeIn2 linear 0.1s;
+    }
+        
+    @keyframes fadeIn2 {
+        0% {text-decoration-color: #1d1d1d;}
+        100% {text-decoration-color: #31BA69;}
+    }
+
+    /* Paragraph */
+
+    .paragraphWrapper{
+        z-index:2;
+        margin-left: 40vw;
+        max-width: 42vw;
+        font-size: 1.7rem;
+    }
+
+    /* Second navigation */
+
+    .navDiv{
+        display: flexbox;
+        margin-top: 35vh;
+        margin-left: 6vw;
+        font-size: 2.8rem;
+    }
+
+    .link{
+        margin-top: 30px;
+        margin-left: 10vw;
+        text-decoration-color: #8CFBDE;
+    }
+
+    .link:hover{
+        text-decoration: none;
+        color: #31BA69;
+    }
+
+    .downArrow{
+        max-width: 50px;
+        display: flex;
+        margin-top: 28vh;
+        margin-left: 45vw;
+        z-index: 1;
+    }
+
+    .projectsTitle{
+        display: flex;
+    }
 }
+@media only screen and (min-width: 1220px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        background-color: #1d1d1d;
+        cursor: default;
+    }
+    ::-webkit-scrollbar{
+        background-color: #1d1d1d;
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: #31BA69;
+    }
+
+    ::selection{
+        background-color: #8CFBDE;
+        color: #1d1d1d;
+    }
 
 
-/* Navigation */
-.navigationWrapper{
-    display: table;
-    margin-left: 65vw;
-    margin-top: 10px;
+    /* Navigation */
+    .navigationWrapper{
+        display: table;
+        margin-left: 65vw;
+        margin-top: 10px;
+    }
+
+    .navLi{
+        display: inline;
+    }
+
+    .navLink{
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-left: 4vw;
+    }
+
+    .navLink:hover{
+        text-decoration: underline;
+        text-decoration-color: #8CFBDE;
+    }
+
+
+    /* Title / Webpage Impression */
+    .title{
+        display: flex;
+        font-size: 5rem;
+        margin-left: 5vw;
+        margin-top: 17vh;
+        z-index:2;
+    }
+
+    .lochyjContainer{
+        display: flex;
+    }
+
+    .hover span:hover{
+        color: #31BA69;
+        animation: smoothFadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes smoothFadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
+
+    .lochyjContainer span:hover{
+        color: #31BA69;
+        animation: fadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes fadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
+
+
+    .pointTitle{
+        color: #31BA69;
+    }
+
+    .pointTitle:hover{
+        color: white;
+    }
+
+    .pointTitle:hover ~ .hoverChange{
+        text-decoration: underline;
+        text-decoration-color: #31BA69;
+        animation: fadeIn2 linear 0.1s;
+    }
+        
+    @keyframes fadeIn2 {
+        0% {text-decoration-color: #1d1d1d;}
+        100% {text-decoration-color: #31BA69;}
+    }
+
+    /* Paragraph */
+
+    .paragraphWrapper{
+        z-index:2;
+        margin-left: 40vw;
+        max-width: 42vw;
+        font-size: 1.7rem;
+    }
+
+    /* Second navigation */
+
+    .navDiv{
+        display: flexbox;
+        margin-top: 35vh;
+        margin-left: 6vw;
+        font-size: 2.8rem;
+    }
+
+    .link{
+        margin-top: 30px;
+        margin-left: 10vw;
+        text-decoration-color: #8CFBDE;
+    }
+
+    .link:hover{
+        text-decoration: none;
+        color: #31BA69;
+    }
+
+    .downArrow{
+        max-width: 50px;
+        display: flex;
+        margin-top: 28vh;
+        margin-left: 45vw;
+        z-index: 1;
+    }
+
+    .projectsTitle{
+        display: flex;
+    }
 }
+@media only screen and (max-width: 700px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        background-color: #1d1d1d;
+        cursor: default;
+    }   
+    ::-webkit-scrollbar{
+        background-color: #1d1d1d;
+        width: 12px;
+    }
 
-.navLi{
-    display: inline;
-}
+    ::-webkit-scrollbar-thumb{
+        background-color: #31BA69;
+    }
 
-.navLink{
-    text-decoration: none;
-    font-size: 1.6rem;
-    margin-left: 4vw;
-}
-
-.navLink:hover{
-    text-decoration: underline;
-    text-decoration-color: #8CFBDE;
-}
-
-
-/* Title / Webpage Impression */
-.title{
-    display: flex;
-    font-size: 5rem;
-    margin-left: 5vw;
-    margin-top: 17vh;
-    z-index:2;
-}
-
-.lochyjContainer{
-    display: flex;
-}
-
-.hover span:hover{
-    color: #31BA69;
-    animation: smoothFadeIn linear 0.2s;
-    cursor: default;
-}
-@keyframes smoothFadeIn {
-    0% {color: white;}
-    100% {color: #31BA69;}
-}
-
-.lochyjContainer span:hover{
-    color: #31BA69;
-    animation: fadeIn linear 0.2s;
-    cursor: default;
-}
-@keyframes fadeIn {
-    0% {color: white;}
-    100% {color: #31BA69;}
-}
+    ::selection{
+        background-color: #8CFBDE;
+        color: #1d1d1d;
+    }
 
 
-.pointTitle{
-    color: #31BA69;
-}
+    /* Navigation */
+    .navigationWrapper{
+        display: table;
+        margin-left: 65vw;
+        margin-top: 10px;
+    }
 
-.pointTitle:hover{
-    color: white;
-}
+    .navLi{
+        display: inline;
+    }
 
-.pointTitle:hover ~ .hoverChange{
-    text-decoration: underline;
-    text-decoration-color: #31BA69;
-    animation: fadeIn2 linear 0.1s;
-}
-    
-@keyframes fadeIn2 {
-    0% {text-decoration-color: #1d1d1d;}
-    100% {text-decoration-color: #31BA69;}
-}
+    .navLink{
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-left: 4vw;
+    }
 
-/* Paragraph */
+    .navLink:hover{
+        text-decoration: underline;
+        text-decoration-color: #8CFBDE;
+    }
 
-.paragraphWrapper{
-    z-index:2;
-    margin-left: 40vw;
-    max-width: 42vw;
-    font-size: 1.7rem;
-}
 
-/* Second navigation */
+    /* Title / Webpage Impression */
+    .title{
+        display: flex;
+        font-size: 5rem;
+        margin-left: 5vw;
+        margin-top: 17vh;
+        z-index:2;
+    }
 
-.navDiv{
-    display: flexbox;
-    margin-top: 35vh;
-    margin-left: 6vw;
-    font-size: 2.8rem;
-}
+    .lochyjContainer{
+        display: flex;
+    }
 
-.link{
-    margin-top: 30px;
-    margin-left: 10vw;
-    text-decoration-color: #8CFBDE;
-}
+    .hover span:hover{
+        color: #31BA69;
+        animation: smoothFadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes smoothFadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
 
-.link:hover{
-    text-decoration: none;
-    color: #31BA69;
-}
+    .lochyjContainer span:hover{
+        color: #31BA69;
+        animation: fadeIn linear 0.2s;
+        cursor: default;
+    }
+    @keyframes fadeIn {
+        0% {color: white;}
+        100% {color: #31BA69;}
+    }
 
-.downArrow{
-    max-width: 50px;
-    display: flex;
-    margin-top: 25vh;
-    margin-left: 45vw;
+
+    .pointTitle{
+        color: #31BA69;
+    }
+
+    .pointTitle:hover{
+        color: white;
+    }
+
+    .pointTitle:hover ~ .hoverChange{
+        text-decoration: underline;
+        text-decoration-color: #31BA69;
+        animation: fadeIn2 linear 0.1s;
+    }
+        
+    @keyframes fadeIn2 {
+        0% {text-decoration-color: #1d1d1d;}
+        100% {text-decoration-color: #31BA69;}
+    }
+
+    /* Paragraph */
+
+    .paragraphWrapper{
+        z-index:2;
+        margin-left: 40vw;
+        max-width: 42vw;
+        font-size: 1.7rem;
+    }
+
+    /* Second navigation */
+
+    .navDiv{
+        display: flexbox;
+        margin-top: 35vh;
+        margin-left: 6vw;
+        font-size: 2.8rem;
+    }
+
+    .link{
+        margin-top: 30px;
+        margin-left: 10vw;
+        text-decoration-color: #8CFBDE;
+    }
+
+    .link:hover{
+        text-decoration: none;
+        color: #31BA69;
+    }
+
+    .downArrow{
+        max-width: 50px;
+        display: flex;
+        margin-top: 28vh;
+        margin-left: 45vw;
+        z-index: 1;
+    }
+
+    .projectsTitle{
+        display: flex;
+    }
 }
 
 /* CSS Effects */
