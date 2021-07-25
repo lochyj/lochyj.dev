@@ -1,21 +1,26 @@
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-async function devButton(){
-    var val = parseInt(document.getElementById('number').innerHTML);
-    if (val <= 98) {
-        var value = parseInt(document.getElementById('number').innerHTML, 10);
-        value = isNaN(value) ? 0 : value;
-        value++;
-        await sleep('100')
-        document.getElementById('number').innerHTML = value;
-    }
-    if (val >= 99) {
-        document.getElementById('number').innerHTML = "o";
-        document.getElementById('a').removeAttr('onclick');
-        frame()
-    }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
-// window.onload = function;
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+//window.onload = popup.style.display = "block";

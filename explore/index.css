@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* ColorPallet: Primary: #1d1d1d; Secondary: #31BA69; Tertiary: #8CFBDE;*/
+.primaryColour{
+	color: #1d1d1d;
+}
+.secondaryColour{
+	color: #31BA69;
+}
+.tertiaryColour{
+	color: #8CFBDE;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	background-color: #1d1d1d;
+	cursor: default;
+}
+
+::selection{
+	background-color: #8CFBDE;
+	color: #1d1d1d;
+}
+/* Title / Webpage Impression */
+.title{
+	display: flex;
+	font-size: 4rem;
+	margin-left: 1vw;
+	margin-top: 2vh;
+	z-index:2;
+}
+
+.line{
+	border-bottom: 2px solid #8CFBDE;
+	max-width: 87vw;
+	margin-left: 7vw;
+	margin-top: 7vh;
+}
+
+.lochyjContainer{
+	display: flex;
+}
+
+.hover span:hover{
+	color: #31BA69;
+	animation: smoothFadeIn linear 0.2s;
+	cursor: default;
+}
+@keyframes smoothFadeIn {
+	0% {color: white;}
+	100% {color: #31BA69;}
+}
+
+.itemWrapper{
+	margin-left: 7vw;
+}
+.catagoryTitle{
+	font-weight: 900;
+	font-size: 2.5rem;
+	margin-top: 3vh;
+	margin-bottom: -1vh;
+}
+.exploreItems h1{
+	margin-top: 4vh;
+	display: flex;
+	border-bottom: 2px solid #8CFBDE;
+	padding-bottom: 4px;
+	max-width: max-content;
+}
+.exploreItems p{
+	margin-top: 1vh;
+	max-width: 50vw;
+}
+.exploreA{
+	text-decoration: none;
+	font-size: 1.7rem;
+	margin-top: 2vh;
+	padding-left:4px; padding-right:4px; padding-bottom:4px;
+	margin-left: -4px;
+	cursor: pointer;
+}
+.exploreA:hover{
+	text-decoration: underline;
+	text-decoration-color: #8CFBDE;
+	background-color: #4f4f4f;
+	border-radius: 6px;
+	cursor: pointer;
+}
+/* CSS Effects */
+
+.neon {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
