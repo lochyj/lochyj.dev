@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <!--<script src="index.js"></script>-->
+    <style>
+        .secondaryColour{
+	        color: #31BA69;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+            background-color: #1d1d1d;
+            cursor: default;
+        }
+        .navigationWrapper{
+            margin-top: 10px;
+            display: flex;
+            align-items: right;
+            text-align: right;
+        }
+
+        .navLi{
+            display: inline;
+            text-align: right;
+        }
+
+        .navLink{
+            text-decoration: none;
+            font-size: clamp(1.2rem, 3vw, 1.9rem);
+            margin-left: 2vw;
+            text-align: right;
+        }
+        .title{
+            display: flex;
+            font-size: clamp(2.8rem, 7vw, 9rem);
+            margin-left:  5vw;
+            margin-top: 17vh;
+        }
+
+        .lochyjContainer{
+            display: flex;
+        }
+        .pointTitle{
+            color: #31BA69;
+        }
+        .paragraphWrapper{
+            z-index:2;
+            margin-left: 40vw;
+            max-width: 42vw;
+            font-size: clamp(0.9rem, 3vw, 4rem);
+        }
+        .navDiv{
+            display: flexbox;
+            margin-top: 27vh;
+            margin-left: 6vw;
+            font-size: 2.8rem;
+        }
+
+        .link{
+            margin-top: 30px;
+            margin-left: 10vw;
+            text-decoration-color: #8CFBDE;
+        }
+        .downArrow{
+            max-width: 50px;
+            display: flex;
+            margin-top: 28vh;
+            margin-left: 45vw;
+            z-index: 1;
+        }
+    </style>
+    <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <title>Welcome, Traveler!</title>
 </head>
 <body>

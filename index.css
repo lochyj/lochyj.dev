@@ -4,20 +4,11 @@
 .primaryColour{
 	color: #1d1d1d;
 }
-.secondaryColour{
-	color: #31BA69;
-}
+
 .tertiaryColour{
 	color: #8CFBDE;
 }
-*{
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Rubik', sans-serif;
-	color: white;
-	background-color: #1d1d1d;
-	cursor: default;
-}
+
 ::-webkit-scrollbar{
 	background-color: #1d1d1d;
 	width: 12px;
@@ -34,26 +25,7 @@
 
 
 /* Navigation */
-.navigationWrapper{
-	margin-top: 10px;
-	display: flex;
-	align-items: right;
-	text-align: right;
-}
 
-.navLi{
-	display: inline;
-	text-align: right;
-
-}
-
-.navLink{
-	text-decoration: none;
-	font-size: clamp(1.2rem, 3vw, 1.9rem);
-	margin-left: 2vw;
-	text-align: right;
-
-}
 
 .navLink:hover{
 	text-decoration: underline;
@@ -62,16 +34,6 @@
 
 
 /* Title / Webpage Impression */
-.title{
-	display: flex;
-	font-size: clamp(2.8rem, 7vw, 9rem);
-	margin-left:  5vw;
-	margin-top: 17vh;
-}
-
-.lochyjContainer{
-	display: flex;
-}
 
 .hover span:hover{
 	color: #31BA69;
@@ -94,9 +56,6 @@
 }
 
 
-.pointTitle{
-	color: #31BA69;
-}
 
 .pointTitle:hover{
 	color: white;
@@ -115,39 +74,9 @@
 
 /* Paragraph */
 
-.paragraphWrapper{
-	z-index:2;
-	margin-left: 40vw;
-	max-width: 42vw;
-	font-size: clamp(0.9rem, 3vw, 4rem);
-}
-
-/* Second navigation */
-
-.navDiv{
-	display: flexbox;
-	margin-top: 27vh;
-	margin-left: 6vw;
-	font-size: 2.8rem;
-}
-
-.link{
-	margin-top: 30px;
-	margin-left: 10vw;
-	text-decoration-color: #8CFBDE;
-}
-
 .link:hover{
 	text-decoration: none;
 	color: #31BA69;
-}
-
-.downArrow{
-	max-width: 50px;
-	display: flex;
-	margin-top: 28vh;
-	margin-left: 45vw;
-	z-index: 1;
 }
 
 .projectsTitle{
