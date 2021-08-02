@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | Page Not Found</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            background-color: #1d1d1d;
+            background:#1d1d1d;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+            cursor: default;
+        }
+        .title{
+            display: flex;
+            font-size: 5rem;
+            margin-left: 5vw;
+            margin-top: 17vh;
+            color: white;
+        }
+        .paragraphWrapper{
+            z-index:2;
+            margin-left: 40vw;
+            max-width: 42vw;
+            color: white;
+            font-size: 2rem;
+        }
+        .hover span:hover{
+            color: #31BA69;
+            animation: smoothFadeIn linear 0.2s;
+            cursor: default;
+        }
+        @keyframes smoothFadeIn {
+            0% {color: white;}
+            100% {color: #31BA69;}
+        }
+    </style>
+    <title>404 - You are lost..</title>
 </head>
 <body>
-    <h1>Hi, There is nothing here :(</h1>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'</style>
+    <h1 class="hover title"><span>4</span><span>0</span><span>4</span><span>.</span><span>.</span></h1>
+    <p class="paragraphWrapper">Humph, we seen to have run into a problem. A big one at that... well there is nothing you can do other than reload or go to the <a href="../../../index.html">home page.</a></p>
+    <style>
+        /* Tooltip container */
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+    </style>
+
+    <div class="tooltip">*
+    <span class="tooltiptext">Hey mate!</span>
+    </div>
 </body>
-</html>
+</html> 
