@@ -27,9 +27,8 @@
 
 ## General:
 
-- make more responsive
+- Make more responsive
 - **make mobile friendly**
-- use clamp, min and max more (makes it way more responsive)
 
 ## Home:
 
@@ -43,15 +42,20 @@
 ## Apps:
 
 - Create an apps page and list the apps along with their respective github page
-- Separate the apps from done, underway, planned and community
+- Separate the apps from done, underway, planned and community apps, similar to explore page
 
 ## Docs:
 
-- Setup github page for it and link it to the site
+> Setup github page
+- link it to the site
 - Create a how to commit guide and a legal file
 - Transfer docs from [lachlanjowett.com](https://lachlanjowett.com) to [lochyj.dev](https://lochyj.dev)
 
 ## Guides:
 
-- Setup github page for it and link it to the site
-- Start and finish the discord markdown guide
+> Setup github page for it and link it to the site
+
+### Guides ideas:
+
+- Discord markdown guide
+- Discord bot guide
